@@ -1,0 +1,54 @@
+header {
+    padding: 5px;
+    font-family: 'Exo 2', sans-serif;
+    background-color: #4B4A49;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.flex-column {
+    width: 25%;
+    height: auto;
+    border-right: 2px solid none;
+    background-color: lightgray;
+}
+
+.flex-column h2,
+.flex-column p {
+    margin-left: 10px;
+}
+
+.column-container {
+    width: 75%;
+    justify-content: right;
+}
+
+.city-row {
+    height: auto;
+    background-color: white;
+    margin: 20px 0 20px 20px;
+    border: 2px solid darkgrey;
+    justify-content: right;
+    padding: 5px;
+}
+
+.weekly-row {
+    height: auto;
+    background-color: white;
+    margin: 20px 0 20px 20px;
+    padding: 5px;
+    flex-direction: row;
+}

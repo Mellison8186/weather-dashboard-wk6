@@ -18,38 +18,88 @@
         <div class="flex-container">
 
             <!-- Left Column -->
-           <div class="flex-column d-inline-flex p-2 bd-highlight">
+           <div class="flex-column p-2 bd-highlight">
                 <h3>Search for a city:</h3>
 
                 <!-- Input with Button -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search City" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-                    </div>
+                <div class="mb-3">
+                    <form id="search-form">
+                      <input id="city-input" type="text" 
+                      class="form-control"
+                      placeholder="Search City">
+                      <button id="submit" class="btn btn-outline-secondary" type="submit">Search</button>
+                  </form>
                   </div>
-
-                  <!-- Right Rows -->
-                <p> ipsum dolor sit amet, trip owner up in kitchen i want food caticus cuteicus. Cuddle no cuddle cuddle love scratch scratch enslave the hooman. Cat playing a fiddle in hey diddle diddle? catching very fast laser pointer lick sellotape. Crusty butthole. Fat baby cat best buddy little guy poop in litter box, scratch the walls. I’m so hungry i’m so hungry but ew not for that eat half my food and ask for more catty ipsum. Inspect anything brought into the house. Paw at beetle and eat it before it gets away my left donut is missing, as is my right immediately regret falling into bathtub tuxedo cats always looking dapper.</p>
+                  <ul id="city-list" class="city-list">
+                    <li id="city-name" class="list-group"></li>
+                  </ul>
             </div>
+
+            <!-- Right Row -->
             <div class="column-container">
             <div class="city-row align-self-start">
-                Cat ipsum dolor sit amet, trip owner up in kitchen i want food caticus cuteicus. Cuddle no cuddle cuddle love scratch scratch enslave the hooman. Cat playing a fiddle in hey diddle diddle? catching very fast laser pointer lick sellotape. Crusty butthole. Fat baby cat best buddy little guy poop in litter box, scratch the walls. I’m so hungry i’m so hungry but ew not for that eat half my food and ask for more catty ipsum. Inspect anything brought into the house. Paw at beetle and eat it before it gets away my left donut is missing, as is my right immediately regret falling into bathtub tuxedo cats always looking dapper.
+              <div id="today" class="card-header" placeholder="City Name">City Name</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">A fifth item</li>
+              </ul>
             </div>
-            <div class="weekly-row"><h3>5 Day Forecast</h3>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Monday</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+
+            <!-- Right Column -->
+            <h3 class="row">5 Day Forecast</h3>
+            <div class="row">
+                <div class="col card" style="width: 18rem;">
+                    <div class="card-header">Date</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                      <li class="list-group-item">A fourth item</li>
+                      <li class="list-group-item">A fifth item</li>
+                    </ul>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Tuesday</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                  <div class="col card" style="width: 18rem;">
+                    <div class="card-header">Date</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                      <li class="list-group-item">A fourth item</li>
+                      <li class="list-group-item">A fifth item</li>
+                    </ul>
+                  </div>
+                  <div class="col card" style="width: 18rem;">
+                    <div class="card-header">Date</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                      <li class="list-group-item">A fourth item</li>
+                      <li class="list-group-item">A fifth item</li>
+                    </ul>
+                  </div>
+                  <div class="col card" style="width: 18rem;">
+                    <div class="card-header">Date</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                      <li class="list-group-item">A fourth item</li>
+                      <li class="list-group-item">A fifth item</li>
+                    </ul>
+                  </div>
+                  <div class="col card" style="width: 18rem;">
+                    <div class="card-header">Date</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                      <li class="list-group-item">A fourth item</li>
+                      <li class="list-group-item">A fifth item</li>
+                    </ul>
                   </div>
             </div>
         </div>

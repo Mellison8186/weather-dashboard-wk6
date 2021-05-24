@@ -34,9 +34,7 @@ var todayIcon = `https://openweathermap.org/img/w/` + data.weather[0].icon + `.p
 // convert from unix time to m/d/yyyy date
 const day0 = data.dt;
 let todaysDate = dayjs.unix(day0).format('M/D/YYYY');
-
 (document.querySelector(`#todaysDate`).textContent = todaysDate);
-console.log(todaysDate)
 };
 
 // function for today's UV Index
@@ -49,7 +47,6 @@ var uvI = function (lat, long) {
         const uv = document.getElementById("item4")
         uv.textContent = "UV Index: " + info.current.uvi;
         if (info.current.uvi <= 4.9) {
-          console.log()
           uv.classList.add("alert-success");
           uv.classList.remove("alert-warning")
           uv.classList.remove("alert-danger")
@@ -171,6 +168,5 @@ var formSubmitHander = function (event) {
   getWeather();
   fiveDays();
 };
-
-historyBtn();
+historyBtn()
 searchFormEl.addEventListener(`submit`, formSubmitHander);
